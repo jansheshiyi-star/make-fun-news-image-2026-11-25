@@ -112,8 +112,7 @@ def main():
             (TEXT_LEFT, block_top + headline_height + gap - summary_box[1]),
             summary_text, font=summary_font, fill=GREY, spacing=4,
         )
-        draw.line((LEFT, top + ROW_HEIGHT - 1, RIGHT, top + ROW_HEIGHT - 1),
-                  fill=RULE)
+        draw.line((LEFT, top + ROW_HEIGHT - 1, RIGHT, top + ROW_HEIGHT - 1), fill=RULE)
     draw.text((LEFT, 995), "Compiled from major news coverage · 25 November 2026",
               font=small_font, fill=GREY, anchor="ls")
     OUTPUT.parent.mkdir(parents=True, exist_ok=True)
